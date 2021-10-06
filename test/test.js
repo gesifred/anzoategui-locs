@@ -40,6 +40,11 @@ describe('anzoategui-names', function () {
         it('must contain "San Mateo"',()=>{
             expect(all).to.include("San Mateo");
         });
+
+        it('should return array of specific qty',()=>{
+            let randomCities = random(4);
+            expect(randomCities.length).to.eql(4);
+        });
     });
 });
 
