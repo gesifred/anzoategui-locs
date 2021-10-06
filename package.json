@@ -5,11 +5,12 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/mocha/bin/mocha --experimental-json-modules --trace-warnings",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gesifred/anzoategui-locs.git"
+    "url": "https://github.com/gesifred/anzoategui-locs.git"
   },
   "author": "Wilfred V <gesifred@gmail.com>",
   "license": "MIT",
@@ -19,5 +20,12 @@
   "homepage": "https://github.com/gesifred/anzoategui-locs#readme",
   "dependencies": {
     "unique-random-array": "3.0.0"
+  },
+  "devDependencies": {
+    "chai": "4.3.4",
+    "commitizen": "4.2.4",
+    "cz-conventional-changelog": "3.3.0",
+    "mocha": "9.1.2",
+    "semantic-release": "18.0.0"
   }
 }
